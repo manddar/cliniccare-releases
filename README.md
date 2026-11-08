@@ -4,17 +4,17 @@ Public update feed for the ClinicCare tablet app. It holds **only** `latest.json
 
 The app's Settings → "Check for updates" fetches:
 
-    https://raw.githubusercontent.com/OWNER/cliniccare-releases/main/latest.json
+    https://raw.githubusercontent.com/manddar/cliniccare-releases/main/latest.json
 
 and, if `build` is newer than the installed build, downloads `apk_url`, checks `sha256`, and opens the Android installer.
 
 ## One-time setup
 
 1. Create an empty **public** GitHub repo named `cliniccare-releases`.
-2. Edit `config.env`: set `OWNER` to your GitHub username.
+2. Edit `config.env`: set `OWNER` (already `manddar`).
 3. From this folder:
 
-       git remote add origin git@github.com:OWNER/cliniccare-releases.git
+       git remote add origin git@github.com:manddar/cliniccare-releases.git
        git add . && git commit -m "Initial feed" && git push -u origin main
 
 ## Publishing a release

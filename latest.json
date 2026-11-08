@@ -1,11 +1,11 @@
 {
-  "version": "0.0.0",
-  "build": 0,
+  "version": "1.0.0",
+  "build": 1,
   "schema_version": 1,
   "min_supported_build": 1,
-  "apk_url": "https://github.com/OWNER/cliniccare-releases/releases/download/v0.0.0/cliniccare-0.0.0-0.apk",
-  "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
-  "size_bytes": 0,
-  "released_at": "2026-11-08T00:00:00Z",
-  "notes": "Placeholder. Replaced by scripts/release.sh on the first real release."
+  "apk_url": "https://github.com/manddar/cliniccare-releases/releases/download/v1.0.0/cliniccare-1.0.0-1.apk",
+  "sha256": "b20093c3bb66ca8410db87c8c1ab62cee7105559ff077444a0460a03a55af6ad",
+  "size_bytes": 23047235,
+  "released_at": "2026-11-08T08:24:59Z",
+  "notes": "First release. Patients, visits, payments, medicines, prescription PDF, backup and restore, and in-app update check."
 }
