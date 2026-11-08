@@ -21,6 +21,16 @@ if [[ -f latest.json ]]; then
   (( build > prev )) || { echo "build $build is not higher than published build $prev" >&2; exit 1; }
 fi
 
+# The APK's real versionCode must equal the build number. `flutter build --split-per-abi`
+# adds an ABI offset (arm64 = +2000), which breaks the app's update check.
+aapt2=$(command -v aapt2 || find "$HOME/android-build-toolchain" "$HOME/Android" -name aapt2 -type f 2>/dev/null | sort | tail -1 || true)
+if [[ -n $aapt2 ]]; then
+  code=$("$aapt2" dump badging "$apk" | grep -oE "versionCode='[0-9]+'" | head -1 | grep -oE '[0-9]+')
+  [[ $code == "$build" ]] || { echo "APK versionCode is $code but pubspec build is $build. Build without --split-per-abi:  flutter build apk --release --target-platform android-arm64" >&2; exit 1; }
+else
+  echo "warning: aapt2 not found, could not verify the APK's versionCode" >&2
+fi
+
 name="cliniccare-$version-$build.apk"
 mkdir -p dist
 cp "$apk" "dist/$name"

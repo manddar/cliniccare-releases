@@ -1,11 +1,11 @@
 {
-  "version": "1.0.0",
-  "build": 1,
-  "schema_version": 1,
+  "version": "1.1.0",
+  "build": 3,
+  "schema_version": 2,
   "min_supported_build": 1,
-  "apk_url": "https://github.com/manddar/cliniccare-releases/releases/download/v1.0.0/cliniccare-1.0.0-1.apk",
-  "sha256": "b20093c3bb66ca8410db87c8c1ab62cee7105559ff077444a0460a03a55af6ad",
-  "size_bytes": 23047235,
-  "released_at": "2026-11-08T08:24:59Z",
-  "notes": "First release. Patients, visits, payments, medicines, prescription PDF, backup and restore, and in-app update check."
+  "apk_url": "https://github.com/manddar/cliniccare-releases/releases/download/v1.1.0/cliniccare-1.1.0-3.apk",
+  "sha256": "3b8b62f4d0463518c95b439b50e8c70ecc066d2be0a1ccabf0ce2c65ffdf792c",
+  "size_bytes": 24621491,
+  "released_at": "2026-11-08T15:16:38Z",
+  "notes": "Phone sync: pair the compounder's phone in Settings → Phone sync so it can add patients, visits and payments over the clinic Wi-Fi (no internet needed). The database updates to version 2 on first launch, so take a backup before updating."
 }

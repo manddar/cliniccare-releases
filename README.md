@@ -19,7 +19,7 @@ and, if `build` is newer than the installed build, downloads `apk_url`, checks `
 
 ## Publishing a release
 
-1. In the app repo: bump `version:` in `pubspec.yaml`, update `CHANGELOG.md`, run `flutter build apk --release` (signed with the release keystore).
+1. In the app repo: bump `version:` in `pubspec.yaml`, update `CHANGELOG.md`, run `flutter build apk --release --target-platform android-arm64` (signed with the release keystore). **Do not use `--split-per-abi`**: it changes the APK's versionCode (arm64 becomes build+2000) and the in-app update check then never sees newer builds.
 2. Write short release notes in a text file, e.g. `notes.txt`.
 3. Here, run:
 
