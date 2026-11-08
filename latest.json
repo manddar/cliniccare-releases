@@ -1,0 +1,11 @@
+{
+  "version": "0.0.0",
+  "build": 0,
+  "schema_version": 1,
+  "min_supported_build": 1,
+  "apk_url": "https://github.com/OWNER/cliniccare-releases/releases/download/v0.0.0/cliniccare-0.0.0-0.apk",
+  "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "size_bytes": 0,
+  "released_at": "2026-11-08T00:00:00Z",
+  "notes": "Placeholder. Replaced by scripts/release.sh on the first real release."
+}
