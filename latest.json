@@ -1,11 +1,11 @@
 {
-  "version": "1.1.0",
-  "build": 3,
-  "schema_version": 2,
+  "version": "1.2.0",
+  "build": 4,
+  "schema_version": 4,
   "min_supported_build": 1,
-  "apk_url": "https://github.com/manddar/cliniccare-releases/releases/download/v1.1.0/cliniccare-1.1.0-3.apk",
-  "sha256": "3b8b62f4d0463518c95b439b50e8c70ecc066d2be0a1ccabf0ce2c65ffdf792c",
-  "size_bytes": 24621491,
-  "released_at": "2026-11-08T15:16:38Z",
-  "notes": "Phone sync: pair the compounder's phone in Settings → Phone sync so it can add patients, visits and payments over the clinic Wi-Fi (no internet needed). The database updates to version 2 on first launch, so take a backup before updating."
+  "apk_url": "https://github.com/manddar/cliniccare-releases/releases/download/v1.2.0/cliniccare-1.2.0-4.apk",
+  "sha256": "bfde8892262d257fa89eef94a5663510755ec3ff3c111c234f94fc749bc947f8",
+  "size_bytes": 24753023,
+  "released_at": "2026-11-12T02:47:58Z",
+  "notes": "New: Collection tab (money received by day, month or period, with PDF export). Phone and diagnosis are now optional. \"Add new patient\" from the visit screen. Billing shows previous balance and lets you settle it. Follow-up date is now only a note. The database updates to version 4 on first launch, so take a backup before updating."
 }
